@@ -1,0 +1,130 @@
+.services-component h2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 22px;
+}
+.services-component{
+    padding: 5rem 0 5rem;
+}
+.services-component .card{
+    background:#262626;
+    border: 0px;
+    border-radius: 0px;
+    padding: 20px ;
+    cursor: pointer;
+    transition: background .5s, transform .5s;
+    overflow: hidden;
+}
+.card-details-services svg{
+    fill: #FF9800;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: transparent;
+    /* animation: example 5s infinite; */
+}
+.card-details-services h4{
+    font-size: 20px;
+    line-height: 26px;
+    color: #ffff;
+    font-weight: 500;
+    background: transparent;
+    margin: 19px 0px;
+}
+.card-details-services p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #ffffffa6;
+    font-weight: 300;
+    background: transparent;
+}
+.card-details-services a{
+    color: #FF9800;
+    background: transparent;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.card-details-services{
+    background: transparent;
+}
+.card-details-services a{
+    position: relative;
+}
+.card-details-services a::after{
+    content: "";
+    width: 40px;
+    height: 1px;
+    position: absolute;
+    left: 76px;
+    bottom: 6px;
+    background: #FF9800;
+    transition: width .5s;
+}
+.card-details-services a:hover::after{
+    width: 20px;
+}
+.services-component .card:hover{
+    background: #ff004f8a;
+    transform: translateY(-10px);
+}
+@media only screen and (max-width: 1190px) and (min-width: 1000px)  {
+    .card-details-services p {
+        font-size: 8px;
+        line-height: 13px;
+        color: #ffffffa6;
+        font-weight: 300;
+        background: transparent;
+    }
+    .card-details-services h4{
+        font-size: 13px;
+        line-height: 10px;
+        color: #ffff;
+        font-weight: 500;
+        background: transparent;
+        margin: 14px 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .services-component .card{
+        background: #262626;
+        border: 0px;
+        border-radius: 0px;
+        padding: 20px;
+        cursor: pointer;
+        transition: background .5s, transform .5s;
+        margin-bottom: 24px;
+    }
+    .services-component {
+        padding: 1rem 12px 0;
+    }
+    .services-component h2 {
+        font-size: 38px;
+        line-height: 50px;
+        font-weight: 500;
+        color: #fff;
+        margin-bottom: 22px;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 800px){
+    
+    .services-component .card {
+        background: #262626;
+        border: 0px;
+        border-radius: 0px;
+        padding: 20px;
+        cursor: pointer;
+        transition: background .5s, transform .5s;
+        overflow: hidden;
+        margin-bottom: 21px;
+    }
+}
+@keyframes example {
+    from {fill: red;}
+    to {fill: #FF9800;}
+  }

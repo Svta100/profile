@@ -1,0 +1,290 @@
+.about-component .card{
+    border: 0px;
+    border-radius: 0px;
+    background: transparent;
+}
+.about-component{
+    padding: 5rem 0 5rem;
+}
+.about-content-compnonetn h2{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 500;
+    color: #fff;
+}
+.about-content-compnonetn p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+.card-left::after{
+    content: "";
+    background: #b61616;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    left: -21px;
+    top: -21px;
+}
+.lang-box div{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+}
+.lang-box h5{
+    font-size: 18px;
+    line-height: 24px;
+    color: red;
+    font-weight: 500;
+}
+.lang-box  p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+.skill-tabs .nav-link{
+    background: transparent;
+    color: red;
+    border: 2px solid red;
+    padding: 12px 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-right: 20px;
+    width: 130px;
+}
+
+.skills-content h5{
+    color: #FF9800;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+}
+.skills-content p{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    color: #ffffffe3;
+}
+.tab-pane{
+    padding-top: 2rem;
+}
+.nav-pills{
+ margin-top: 2rem !important;
+}
+.education-main-sub h5{
+    color: #FF9800;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.education-main-sub strong{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.education-main-details h6{
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-top: 4px;
+}
+.education-main-details div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.exparicance-box-main h5{
+    color: #FF9800;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.exparicance-box h6{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+.exparicance-box{
+    display: flex;
+    justify-content: space-between;
+}
+.exparicance-box-main p{
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+.skill-tabs .nav-link.active{
+    background: red;
+    color: #fff;
+}
+.parallex-section{
+    background: url(../../assets/image/christopher-gower-m.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 5rem 0;
+}
+.parallex-section .card{
+    text-align: center;
+    display: flex;
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    max-width: 100%;
+    margin: auto;
+    padding: 16px 16px;
+    color: #b61616;
+    background: #00000096;
+    border: 0px;
+}
+.parallex-section .card p{
+    margin-bottom: 0px;
+}
+.parallex-section .card i {
+    color: #FF9800;
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 16px;
+    -webkit-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+
+.parallex-section h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 600;
+    line-height: normal;
+}
+.parallex-section h5{
+    color: #fff;
+    background: transparent;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.parallex-section .card:hover i {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+    .skill-tabs .nav-link{
+        background: transparent;
+        color: red;
+        border: 2px solid red;
+        padding: 12px 11px;
+        font-size: 11px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-right: 20px;
+        width: 100px;
+    }
+    .about-content-compnonetn h2{
+        font-size: 38px;
+        line-height: 42px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .about-content-compnonetn p{
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        font-weight: 300;
+    }
+    .about-content-compnonetn{
+        padding: 0px 12px;
+    }
+    .education-main-sub h5{
+        color: #FF9800;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+    .education-main-sub strong{
+        color: #fff;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    .education-main-details h6{
+        color: #fff;
+        font-size: 10px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-top: 0px;
+    }
+    .exparicance-box-main h5{
+        color: #FF9800;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .exparicance-box h6{
+        color: #fff;
+        font-size: 11px;
+        line-height: 20px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+    .nav-pills{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .tab-pane{
+        padding-top: 1rem;
+    }
+    .card img {
+        width: 92%;
+        max-width: 100%;
+        margin: auto;
+        object-fit: cover;
+        height: 371px;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 800px){
+    .skill-tabs .nav-link {
+        background: transparent;
+        color: red;
+        border: 2px solid red;
+        padding: 12px 12px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-right: 20px;
+        width: 130px;
+        margin-bottom: 20px;
+    }
+}

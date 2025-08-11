@@ -1,0 +1,16 @@
+.bg-image:not([class*=absolute]) {
+    position: absolute;
+}
+.bg-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    object-fit: cover;
+}
+footer{
+    position: relative;
+    height: 600px;
+    max-height: 100%;
+}

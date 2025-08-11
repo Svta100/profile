@@ -1,0 +1,104 @@
+<section class="contact-component" id="contactus">
+    <div class="container">
+        <div class="col">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                    <div class="contact-left-content" data-aos="fade-right">
+                        <h2><span style="color:red">C</span>ontact Me</h2>
+                        <div class="contact-left-content-p">
+                            <p><span></span>kannaujiyavijay684&#64;gmail.com</p>
+                            <p><span></span>+91 9015908248</p>
+                        </div>
+                        <div class="contac-social-media">
+                            <a>
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                            <a href="www.linkedin.com/in/vijay-kumar-kannaujiya-2a8245165">
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </a>
+                            <a>
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <a href="../../assets/image/myresume.pdf" download="" class="btn">Download CV</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                    <div class="contact-from-right" data-aos="fade-left">
+                        <form [formGroup]="contactForm" (ngSubmit)="formSubmit($event)">
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" name="firstName" class="form-control" placeholder="First Name" formControlName="firstName">
+                                    @if (contactForm.controls['firstName'].invalid && contactForm.controls['firstName'].touched) {
+                                        <p [ngClass]="'text-danger'">
+                                            please enter first Name
+                                        </p>
+                                    }
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="lastName" class="form-control" placeholder="Last Name" formControlName="lastName">
+                                    @if (contactForm.controls['lastName'].invalid && contactForm.controls['lastName'].touched) {
+                                        <p [ngClass]="'text-danger'">
+                                            please enter last Name
+                                        </p>
+                                    }
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" name="email" class="form-control" placeholder="Email Address" formControlName="email">
+                                    @if (contactForm.controls['email'].invalid && contactForm.controls['email'].touched) {
+                                        <p [ngClass]="'text-danger'">
+                                            please enter email address
+                                        </p>
+                                    }
+                                    @if (contactForm.controls['email'].hasError('pattern')) {
+                                        <p [ngClass]="'text-danger'">
+                                            please enter vlaid email address
+                                        </p> 
+                                    }
+                                </div>
+                                <div class="col-12">
+                                    <input type="number" name="phone" class="form-control" placeholder="Phone Number" formControlName="phone">
+                                    @if (contactForm.controls['phone'].invalid && contactForm.controls['phone'].touched) {
+                                        <p [ngClass]="'text-danger'">
+                                            please enter phone Number
+                                        </p>
+                                    }
+                                    @if (contactForm.controls['phone'].hasError('pattern')) {
+                                        <p [ngClass]="'text-danger'">
+                                            please enter valid phone Number
+                                        </p> 
+                                    }
+                                </div>
+                                <div class="col-12">
+                                    <input type="file" name="fileAddress" class="form-control" placeholder="file" formControlName="fileAddress">
+                                    @if (contactForm.controls['fileAddress'].invalid && contactForm.controls['fileAddress'].touched) {
+                                        <p [ngClass]="'text-danger'">
+                                            please upload file 
+                                        </p>
+                                    }
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="msg" placeholder="Describe yourself here..." formControlName="msg"></textarea>
+                                    @if (contactForm.controls['msg'].invalid && contactForm.controls['msg'].touched) {
+                                        <p [ngClass]="'text-danger'">
+                                            please write something in top box
+                                        </p>
+                                    }
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn submit-btn" [disabled]="!contactForm.valid">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-success alert-dismissible" [ngClass]="alertshow" role="alert">
+        Your form is submitted
+    </div>
+</section>
